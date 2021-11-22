@@ -9,21 +9,27 @@ import java.util.Date;
 
 /**
  *
- * @author chave
+ * @author jordy
  */
-public class Oficial extends Persona{
-    private double salario;
-
-    public Oficial(String nombre, String apellido1, String apellido2, int cedula, Date fecha, int telefono, String correo) {
+public class Cliente extends Persona{
+    
+    private int edad;
+    
+    public Cliente(String nombre, String apellido1, String apellido2, int cedula, Date fecha, int telefono, String correo) {
         super(nombre, apellido1, apellido2, cedula, fecha, telefono, correo);
     }
 
-    public Oficial(int cedula) {
+    public Cliente(int cedula) {
         super(cedula);
     }
 
-    public Oficial() {
+    public Cliente() {
     }
-       
+
+    public int getEdad() {
+        return edad;
+    }
+    
+    
     
 }
