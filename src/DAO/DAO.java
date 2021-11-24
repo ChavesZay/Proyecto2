@@ -9,6 +9,12 @@ package DAO;
  *
  * @author jordy
  */
-public interface DAO {
-    
+public interface DAO<Clase> {
+     public boolean insertar(Clase ob);
+    public boolean modificar(Clase ob);
+    public boolean eliminar(Clase ob);
+    public Clase buscar(Clase ob);
+    public Clase[] listar();
+    public boolean validarPK(Clase ob);
+    public boolean validarFK(Clase ob);
 }
