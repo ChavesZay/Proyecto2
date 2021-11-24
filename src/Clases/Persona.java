@@ -93,5 +93,5 @@ public abstract class Persona {
         this.correo = correo;
     }
     
-    
+    public abstract  boolean  requeridos();
 }

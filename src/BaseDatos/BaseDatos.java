@@ -74,7 +74,7 @@ public class BaseDatos {
         }
     }
 
-    public Object[][] Seleccionar(Object[] parametros) {
+    public Object[][] seleccionar(Object[] parametros) {
         this.error = null;
         try {
             this.cargar(parametros);

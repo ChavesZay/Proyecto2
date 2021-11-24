@@ -10,7 +10,7 @@ package DAO;
  * @author jordy
  */
 public interface DAO<Clase> {
-     public boolean insertar(Clase ob);
+    public boolean insertar(Clase ob);
     public boolean modificar(Clase ob);
     public boolean eliminar(Clase ob);
     public Clase buscar(Clase ob);
