@@ -93,8 +93,10 @@ public class Archivos {
     public double getTamano(){
         return (double) (this.file.length()/1048576);
     }
+    
     public Date getFechaModificacion(){
        return  new Date(this.file.lastModified());
     }  
+    
    
 }
