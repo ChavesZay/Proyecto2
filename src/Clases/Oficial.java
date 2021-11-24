@@ -14,8 +14,9 @@ import java.util.Date;
 public class Oficial extends Persona{
     private double salario;
 
-    public Oficial(String nombre, String apellido1, String apellido2, int cedula, Date fecha, int telefono, String correo) {
+    public Oficial(String nombre, String apellido1, String apellido2, int cedula, Date fecha, int telefono, String correo, double salario) {
         super(nombre, apellido1, apellido2, cedula, fecha, telefono, correo);
+        this.salario=salario;
     }
 
     public Oficial(int cedula) {
@@ -23,6 +24,14 @@ public class Oficial extends Persona{
     }
 
     public Oficial() {
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
        
     
